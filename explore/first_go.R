@@ -20,8 +20,8 @@ thresh <- 0.10
 # we xcreate control lines on the basis of a hypothesis the true rate
 # is greater/equal than thresh, and a hypothesis it is less
 sigma <- sqrt(thresh * (1- thresh) / n)
-upper <- thresh + 2 * sigma
-lower <- thresh - 2 * sigma
+upper <- thresh + 3 * sigma
+lower <- thresh - 3 * sigma
 
 # generate some random data
 samp <- data.frame(defects = rbinom(m * reps, n, p), 
